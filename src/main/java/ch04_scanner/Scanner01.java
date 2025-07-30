@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Scanner01 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         // 변수 선언
 //        String name;
 //        name = "안근수";
 //        System.out.println(name);
-        Scanner scanner = new Scanner(System.in);
 //        System.out.print("이름을 입력하세요 >>> ");
 //        String name2 = scanner.nextLine();
 //        System.out.println(name2);
 
         /*
             1. println과 print의 차이
-            ln : line new -> println으로 실행하면 출력문이 다 나오면 자동으로 개행됨.
+            ln : line new -> println 으로 실행하면 출력문이 다 나오면 자동으로 개행됨.
             print로 작성할 경우에 동일 라인에 그대로 적용됨.
             2. nextLine / nextInt / next***등등 구분 잘하기
          */
