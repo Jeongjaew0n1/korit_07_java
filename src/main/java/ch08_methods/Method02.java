@@ -22,31 +22,29 @@ public class Method02 {
         } else if (option == 2) {
             for (int i = 1; i < rows + 1; i++) {
                 for (int j = rows; j > i; j--) {
-                    System.out.print(" ");
+                    result += " ";
                 }
                 for (int k = 0; k < i; k++) {
-                    System.out.print("*");
+                    result += "*";
                 }
-                System.out.println();
+                result += "\n";
             }
         } else if (option == 3) {
             for (int i = rows; i > 0; i--) {
                 for (int j = 0; j < i; j++) {
-                    System.out.print("*");
+                    result += "*";
                 }
-                System.out.println();
+                result += "\n";
             }
         } else if (option == 4) {
             for (int i = 0; i < rows; i++) {
-                // 공백을 책임지는 for문
                 for (int j = 0; j < i; j++) {
-                    System.out.print(" ");
+                    result += " ";
                 }
-                // 별을 책임지는 for문
                 for (int k = rows; k > i; k--) {
-                    System.out.print("*");
+                    result += "*";
                 }
-                System.out.println();
+                result += "\n";
             }
         } else {
             System.out.println("잘못된 옵션을 선택하셨습니다.");
