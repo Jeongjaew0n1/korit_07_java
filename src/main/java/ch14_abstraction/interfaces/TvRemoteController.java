@@ -1,8 +1,8 @@
 package ch14_abstraction.interfaces;
 
 public class TvRemoteController {
-    // 필드 선언
-    private PowerButton powerButton; // 접근지정자 클래스명 객체명 -> 이때까지의 작성방법과 다릅니다.
+    // 접근지정자 클래스명 객체명 -> 이때까지의 작성방법과 다릅니다.
+    private PowerButton powerButton;
     private ChannelDownButton channelDownButton;
     private ChannelUpButton channelUpButton;
     private VolumeDownButton volumeDownButton;
