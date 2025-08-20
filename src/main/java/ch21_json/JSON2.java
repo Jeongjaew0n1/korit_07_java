@@ -82,15 +82,19 @@ public class JSON2 {
         Map<String, String> productMap2 = gson.fromJson(jsonProduct2, Map.class);
         System.out.println(productMap2);
 
-        // 특정 Java 객체와 Json String data가 있다고 가정했을 때 서로 왔다갔다하면서 고칠 수 있겠네요. Map과 Json 데이터 역시 그렇습니다.
+        /*
+            특정 Java 객체와 Json String data가 있다고 가정했을 때 서로 왔다갔다하면서 고칠 수 있겠네요.
+            Map과 Json 데이터 역시 그렇습니다.
+         */
 
         /*
             gsonBuilder로 fromJson()을 적용하더라도 콘솔 상에서
             prettyPrinting은 적용되지 않습니다.
-            결과값 : {username=kim1, password=9876, email=a@test.com, name=김일, age=20}
+            결과값 :
+            {username=kim1, password=9876, email=a@test.com, name=김일, age=20}
             이상의 이유는 fromJson()이라는 메서드명에서 알 수 있듯이
             JsonData(즉 String Data)를 Map으로 바꾸는 겁니다.
-            String의 경우에는 개행을 통해서 prettyPriting 적용될 수 있지만,
+            String의 경우에는 개행을 통해서 prettyPriting이 적용될 수 있지만,
             Map은 toString() 메서드를 재정의 하지 않으면 default값 형태로 콘솔에 출력이 되겠죠.
             그래서 gson.fromJson()이든 gsonBuilder.fromJson()이건 콘솔에 찍히는
             결과값은 동일하다고 할 수 있습니다.

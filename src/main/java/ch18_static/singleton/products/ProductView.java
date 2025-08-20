@@ -20,4 +20,6 @@ public class ProductView {
         return instance;
     }
 
+
+
 }
